@@ -1,385 +1,178 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Oluwaseyi Salisu</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Oluwaseyi Salisu</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/Untitled design - 2.PNG" alt="Oluwaseyi Salisu" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Oluwaseyi Salisu</h1>
-        <p class="section__text__p2">Comp Sci Major</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/SeyiResume.pdf')"
-          >
-            Download Resume
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="Oluwaseyi Salisu"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/oluwaseyi-salisu/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="Oluwaseyi Salisu"
-            class="icon"
-            onclick="location.href='https://github.com/iiamSeyi'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/instagram1-228.jpg"
-            alt="Oluwaseyi Salisu"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Oluwaseyi Salisu"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>1+ years <br />Computer Science</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Oluwaseyi Salisu"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Towson University<br />Computer Science</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p style="text-align: center;">
-              Hello, I am Oluwaseyi Samuel Salisu, a Sophomore at Towson University majoring in Computer Science with a concentration in Software Engineering. 
-              I am actively seeking a tech internship to expand my expertise, with a particular interest in becoming a full-stack AI engineer. 
-              My passion lies at the intersection of software engineering and artificial intelligence, and I am eager to gain hands-on experience in these fields.
-              With an expected graduation in May 2027, I have built a strong foundation in computer science at the Community College of Baltimore County and developed critical analytical and teamwork skills during my time at Kenwood High IB and Sports Science. 
-              My academic journey has been complemented by hands-on experience in caregiving at Dockings HealthCare Services, where I earned recognition for my reliability, empathy, and dedication.
-              I am committed to mastering both the frontend and backend aspects of AI development, aiming to build end-to-end AI solutions that are not only technically robust but also user-friendly. 
-              My passion for caregiving and computer science drives me to blend soft skills with technical knowledge, particularly in AI, where I see vast potential to make a meaningful impact.
-              As a lifelong learner, I am eager to absorb and apply knowledge from various disciplines, aiming to contribute dynamically to any team or project. 
-              My goal is to leverage my skills in software engineering and AI to create innovative solutions that address real-world challenges.
-            </p>
-
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Oluwaseyi Salisu"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Coding Languages</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Oluwaseyi Salisu"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Oluwaseyi Salisu"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Oluwaseyi Salisu"
-                  class="icon"
-                />
-                <div>
-                  <h3>C++</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Oluwaseyi Salisu"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Oluwaseyi Salisu"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">IDE & Other Tools</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Oluwaseyi Salisu"
-                  class="icon"
-                />
-                <div>
-                  <h3>Pycharm</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Oluwaseyi Salisu"
-                  class="icon"
-                />
-                <div>
-                  <h3>Github</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Oluwaseyi Salisu"
-                  class="icon"
-                />
-                <div>
-                  <h3>Dr Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Oluwaseyi Salisu"
-                  class="icon"
-                />
-                <div>
-                  <h3>VS Code</h3>
-                  <p>Intermediate</p>
-                </div>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Oluwaseyi Salisu"
-                  class="icon"
-                />
-                <div>
-                  <h3>MS Office</h3>
-                  <p>Proficient</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Oluwaseyi Salisu"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/Screenshot 2024-08-25 105315.png"
-                  alt="Oluwaseyi Salisu"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Recipe Ai</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/jeffreyhluu/RecipeAi'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://recipe-ai-psi.vercel.app/'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/Screenshot 2024-08-25 104950.png"
-                  alt="Oluwaseyi Salisu"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">CleverCards AI</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/iiamSeyi/CleverCards-AI'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://clever-cards-ai.vercel.app/'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/Screenshot 2024-08-25 105146.png"
-                  alt="Oluwaseyi Salisu"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Pantry Tracker</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/iiamSeyi/pantry-tracker'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://pantry-tracker-ev12.vercel.app/'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Oluwaseyi Salisu"
-          class="icon arrow"
-          onclick="location.href='./#contact'"
-        />
-      </section>
-      <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
+<section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container">
+        <h2 class="experience-sub-title">Coding Languages</h2>
+        <div class="article-container">
+          <article>
             <img
-              src="./assets/email.png"
+              src="./assets/checkmark.png"
               alt="Oluwaseyi Salisu"
-              class="icon contact-icon email-icon"
+              class="icon"
             />
-            <p><a href="mailto:oluwaseyisalisu1@gmail.com">oluwaseyisalisu1@gmail.com</a></p>
-          </div>
-          <div class="contact-info-container">
+            <div>
+              <h3>HTML</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
             <img
-              src="./assets/linkedin.png"
+              src="./assets/checkmark.png"
               alt="Oluwaseyi Salisu"
-              class="icon contact-icon"
+              class="icon"
             />
-            <p><a href="https://www.linkedin.com/in/oluwaseyi-salisu/">LinkedIn</a></p>
-          </div>
+            <div>
+              <h3>CSS</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Oluwaseyi Salisu"
+              class="icon"
+            />
+            <div>
+              <h3>C++</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Oluwaseyi Salisu"
+              class="icon"
+            />
+            <div>
+              <h3>Java</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Oluwaseyi Salisu"
+              class="icon"
+            />
+            <div>
+              <h3>Python</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
         </div>
-      </section>
-      <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-        <p>Copyright &#169; 2024 Oluwaseyi Salisu. All Rights Reserved.</p>
-      </footer>s
-  <script src="script.js"></script>
-</body>
-</html>
+      </div>
+      <div class="details-container">
+        <h2 class="experience-sub-title">IDE & Other Tools</h2>
+        <div class="article-container">
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Oluwaseyi Salisu"
+              class="icon"
+            />
+            <div>
+              <h3>Pycharm</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Oluwaseyi Salisu"
+              class="icon"
+            />
+            <div>
+              <h3>Github</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Oluwaseyi Salisu"
+              class="icon"
+            />
+            <div>
+              <h3>Dr Java</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Oluwaseyi Salisu"
+              class="icon"
+            />
+            <div>
+              <h3>VS Code</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Oluwaseyi Salisu"
+              class="icon"
+            />
+            <div>
+              <h3>MS Office</h3>
+              <p>Proficient</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Oluwaseyi Salisu"
+              class="icon"
+            />
+            <div>
+              <h3>Firebase</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Oluwaseyi Salisu"
+              class="icon"
+            />
+            <div>
+              <h3>Material UI</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Oluwaseyi Salisu"
+              class="icon"
+            />
+            <div>
+              <h3>Node.js</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Oluwaseyi Salisu"
+              class="icon"
+            />
+            <div>
+              <h3>React.js</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img
+    src="./assets/arrow.png"
+    alt="Oluwaseyi Salisu"
+    class="icon arrow"
+    onclick="location.href='./#projects'"
+  />
+</section>
