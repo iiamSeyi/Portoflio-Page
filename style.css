@@ -301,7 +301,6 @@ section {
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
-    min-width: 280px; /* Minimum width to prevent items from being too small */
 }
 
 .section-container {
@@ -339,19 +338,16 @@ section {
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 1.5rem; /* Reduced gap to fit more items neatly */
+    gap: 2.5rem;
     justify-content: space-around;
-    padding: 1rem 0; /* Added padding for better spacing */
 }
 
 article {
     display: flex;
-    flex: 1 1 30%; /* Ensures three items per row on larger screens */
+    width: auto;
     justify-content: space-around;
     gap: 0.5rem;
-    margin-bottom: 1rem; /* Adds space between rows */
 }
-
 
 article .icon {
     cursor: default;
