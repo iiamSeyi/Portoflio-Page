@@ -1,387 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="icon" type="image/png" href="./assets/Untitled design-modified.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oluwaseyi Salisu — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/Untitled design (1)-jukebox-bg-removed.png">
+</head>
+<body>
 
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Oluwaseyi Salisu</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Oluwaseyi Salisu</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/Untitled design-modified.png" alt="Oluwaseyi Salisu" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Oluwaseyi Salisu</h1>
-        <p class="section__text__p2">Comp Sci Major</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/SeyiResume_main.pdf')"
-          >
-            Download Resume
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="Oluwaseyi Salisu"
-            class="icon"
-            onclick="window.open('https://www.linkedin.com/in/oluwaseyi-salisu/', '_blank')"
-          />
-          <img
-            src="./assets/github.png"
-            alt="Oluwaseyi Salisu"
-            class="icon"
-            onclick="window.open('https://github.com/iiamSeyi', '_blank')"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/instagram1-228.jpg"
-            alt="Oluwaseyi Salisu"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Oluwaseyi Salisu"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>1+ years <br />Computer Science</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Oluwaseyi Salisu"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Towson University<br />Computer Science</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p style="text-align: center;">
-              Hello, I am Oluwaseyi Samuel Salisu, a Sophomore at Towson University majoring in Computer Science with a concentration in Software Engineering. 
-              I am actively seeking a tech internship to expand my expertise, with a particular interest in becoming a full-stack AI engineer. 
-              My passion lies at the intersection of software engineering and artificial intelligence, and I am eager to gain hands-on experience in these fields.
-              With an expected graduation in May 2027, I have built a strong foundation in computer science at the Community College of Baltimore County and developed critical analytical and teamwork skills during my time at Kenwood High IB and Sports Science. 
-              My academic journey has been complemented by hands-on experience in caregiving at Dockings HealthCare Services, where I earned recognition for my reliability, empathy, and dedication.
-              I am committed to mastering both the frontend and backend aspects of AI development, aiming to build end-to-end AI solutions that are not only technically robust but also user-friendly. 
-              My passion for caregiving and computer science drives me to blend soft skills with technical knowledge, particularly in AI, where I see vast potential to make a meaningful impact.
-              As a lifelong learner, I am eager to absorb and apply knowledge from various disciplines, aiming to contribute dynamically to any team or project. 
-              My goal is to leverage my skills in software engineering and AI to create innovative solutions that address real-world challenges.
-            </p>
+  <!-- CURSORS -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
 
-          </div>
-        </div>
+  <!-- DESKTOP NAV -->
+  <nav id="desktop-nav">
+    <div class="logo">OS<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HAMBURGER NAV -->
+  <nav id="hamburger-nav">
+    <div class="logo">OS<span>.</span></div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
       </div>
+      <ul class="menu-links">
+        <li><a href="#about"      onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects"   onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact"    onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PROFILE -->
+  <section id="profile">
+    <div class="profile-glow"></div>
+    <div class="section__pic-container">
       <img
-        src="./assets/arrow.png"
+        src="./assets/IMG_6808.jpeg"
         alt="Oluwaseyi Salisu"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
+        class="profile-pic"
+        onerror="this.parentElement.style.background='var(--surface)'"
       />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Coding Languages</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Oluwaseyi Salisu"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Oluwaseyi Salisu"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Oluwaseyi Salisu"
-                  class="icon"
-                />
-                <div>
-                  <h3>C++</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Oluwaseyi Salisu"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Oluwaseyi Salisu"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">IDE & Other Tools</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Oluwaseyi Salisu"
-                  class="icon"
-                />
-                <div>
-                  <h3>Pycharm</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Oluwaseyi Salisu"
-                  class="icon"
-                />
-                <div>
-                  <h3>Github</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Oluwaseyi Salisu"
-                  class="icon"
-                />
-                <div>
-                  <h3>Dr Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Oluwaseyi Salisu"
-                  class="icon"
-                />
-                <div>
-                  <h3>VS Code</h3>
-                  <p>Intermediate</p>
-                </div>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Oluwaseyi Salisu"
-                  class="icon"
-                />
-                <div>
-                  <h3>MS Office</h3>
-                  <p>Proficient</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Towson University &nbsp;·&nbsp; Class of 2027</p>
+      <h1 class="title">
+        Oluwaseyi<br>
+        <span class="serif-word">Samuel</span>&nbsp;<span class="accent-word">Salisu</span>
+      </h1>
+      <p class="section__text__p2">Computer Science Major</p>
+      <div class="btn-container">
+        <button class="btn btn-color-1" onclick="window.open('./assets/resume.pdf')">Resume</button>
+        <button class="btn btn-color-2" onclick="location.href='#contact'">Contact</button>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Oluwaseyi Salisu"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/istockphoto.jpg"
-                  alt="Oluwaseyi Salisu"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">PQ-ACE</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/iiamSeyi/STZN'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://stzn-fbzo.vercel.app/'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/Screenshot 2024-08-25 104950.png"
-                  alt="Oluwaseyi Salisu"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">CleverCards AI</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/iiamSeyi/CleverCards-AI'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://clever-cards-ai.vercel.app/'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/images.png"
-                  alt="Oluwaseyi Salisu"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Fake News Forensic</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/iiamSeyi/Fake-News-Forensic'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://www.kaggle.com/code/oluwaseyisalisu/fake-news-forensic'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div id="socials-container">
         <img
-          src="./assets/arrow.png"
-          alt="Oluwaseyi Salisu"
-          class="icon arrow"
-          onclick="location.href='./#contact'"
+          src="./assets/linkedin.png"
+          alt="LinkedIn"
+          class="icon"
+          onclick="location.href='https://www.linkedin.com/in/oluwaseyi-salisu/'"
         />
-      </section>
-      <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./assets/email.png"
-              alt="Oluwaseyi Salisu"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:oluwaseyisalisu1@gmail.com">oluwaseyisalisu1@gmail.com</a></p>
+        <img
+          src="./assets/github.png"
+          alt="GitHub"
+          class="icon"
+          onclick="location.href='https://github.com/oluwaseyi-salisu'"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip">
+    <div class="marquee-inner">
+      <span>Software Engineering</span><span class="dot"> ✦ </span>
+      <span>Full-Stack AI</span><span class="dot"> ✦ </span>
+      <span>Java · Python · JavaScript</span><span class="dot"> ✦ </span>
+      <span>Machine Learning</span><span class="dot"> ✦ </span>
+      <span>Towson University</span><span class="dot"> ✦ </span>
+      <span>Headstarter Fellow</span><span class="dot"> ✦ </span>
+      <span>Open to Opportunities</span><span class="dot"> ✦ </span>
+      <span>Software Engineering</span><span class="dot"> ✦ </span>
+      <span>Full-Stack AI</span><span class="dot"> ✦ </span>
+      <span>Java · Python · JavaScript</span><span class="dot"> ✦ </span>
+      <span>Machine Learning</span><span class="dot"> ✦ </span>
+      <span>Towson University</span><span class="dot"> ✦ </span>
+      <span>Headstarter Fellow</span><span class="dot"> ✦ </span>
+      <span>Open to Opportunities</span><span class="dot"> ✦ </span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="section-label reveal">01 — Profile</p>
+    <p class="title reveal">About <em>Me</em></p>
+    <div class="section-container">
+      <div class="section__pic-container reveal">
+        <img
+          src="./assets/instagram1-228.jpg"
+          alt="About Oluwaseyi"
+          class="about-pic"
+        />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers reveal">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience" class="icon"/>
+            <h3>Experience</h3>
+            <p>1+ Years<br/>Computer Science</p>
           </div>
-          <div class="contact-info-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="Oluwaseyi Salisu"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com/in/oluwaseyi-salisu/">LinkedIn</a></p>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education" class="icon"/>
+            <h3>Education</h3>
+            <p>Towson University<br/>Computer Science</p>
           </div>
         </div>
-      </section>
-      <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="text-container reveal">
+          <p class="about-text-p">
+            I'm <strong>Oluwaseyi Samuel Salisu</strong>, a  junior at Towson University pursuing a B.S. 
+            in Computer Science with a Software Engineering concentration. I carry a 3.73 GPA 
+            and have earned Dean's List every semester I've been enrolled.
+          </p>
+          <p class="about-text-p">
+            I've built and deployed <strong>full-stack AI applications</strong>
+            across internships and independent projects. From RAG pipelines analyzing nearly 45,000 
+            news articles to ML agents that cut workflow time by 30%. My stack spans React, Next.js, Spring Boot, 
+            Python, and the OpenAI and Gemini APIs.
+          </p>
+          <p class="about-text-p">
+            Outside of code I serve as a <strong>Resident Assistant</strong> at Towson, play basketball, stay active in the gym, 
+            and grind through Japanese on Duolingo. I believe the same discipline that builds a great athlete builds a great engineer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <p class="section-label reveal">02 — Toolkit</p>
+    <p class="title reveal">My <em>Experience</em></p>
+    <div class="experience-details-container">
+      <div class="about-containers experience-details-container">
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Languages &amp; <span>Frontend</span></h2>
+          <div class="article-container reveal">
+            <article>
+              <img src="./assets/checkmark.png" alt="check" class="icon"/>
+              <div><h3>Java</h3><p>Intermediate</p></div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="check" class="icon"/>
+              <div><h3>Python</h3><p>Intermediate</p></div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="check" class="icon"/>
+              <div><h3>JavaScript / TS</h3><p>Intermediate</p></div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="check" class="icon"/>
+              <div><h3>C++</h3><p>Basic</p></div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="check" class="icon"/>
+              <div><h3>HTML / CSS</h3><p>Intermediate</p></div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="check" class="icon"/>
+              <div><h3>React.js</h3><p>Intermediate</p></div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="check" class="icon"/>
+              <div><h3>Next.js</h3><p>Intermediate</p></div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="check" class="icon"/>
+              <div><h3>Tailwind CSS</h3><p>Intermediate</p></div>
+            </article>
           </div>
-        </nav>
-        <p>Copyright &#169; 2024 Oluwaseyi Salisu. All Rights Reserved.</p>
-      </footer>s
+        </div>
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend, AI &amp; <span>Tools</span></h2>
+          <div class="article-container reveal">
+            <article>
+              <img src="./assets/checkmark.png" alt="check" class="icon"/>
+              <div><h3>Spring Boot</h3><p>Intermediate</p></div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="check" class="icon"/>
+              <div><h3>Node / Express</h3><p>Intermediate</p></div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="check" class="icon"/>
+              <div><h3>MongoDB / PostgreSQL</h3><p>Intermediate</p></div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="check" class="icon"/>
+              <div><h3>Firebase / Firestore</h3><p>Intermediate</p></div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="check" class="icon"/>
+              <div><h3>OpenAI / Gemini API</h3><p>Intermediate</p></div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="check" class="icon"/>
+              <div><h3>FAISS / RAG / NLP</h3><p>Intermediate</p></div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="check" class="icon"/>
+              <div><h3>Git / GitHub</h3><p>Proficient</p></div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="check" class="icon"/>
+              <div><h3>Vercel / CI-CD</h3><p>Intermediate</p></div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section-label reveal">03 — Work</p>
+    <p class="title reveal">Recent <em>Projects</em></p>
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <div class="details-container color-container reveal">
+          <div class="article-container">
+            <img src="./assets/istockphoto.jpg" alt="PQ-ACE" class="project-img"/>
+          </div>
+          <h2 class="project-title">PQ-ACE</h2>
+          <div class="btn-container">
+            <button class="btn project-btn btn-color-2" onclick="location.href='https://github.com/oluwaseyi-salisu'">GitHub</button>
+            <button class="btn project-btn btn-color-2" onclick="location.href='#'">Live Demo</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container reveal">
+          <div class="article-container">
+            <img src="./assets/Screenshot 2024-08-25 104950.png" alt="CleverCards AI" class="project-img"/>
+          </div>
+          <h2 class="project-title">CleverCards AI</h2>
+          <div class="btn-container">
+            <button class="btn project-btn btn-color-2" onclick="location.href='https://github.com/oluwaseyi-salisu'">GitHub</button>
+            <button class="btn project-btn btn-color-2" onclick="location.href='https://clever-cards-ai.vercel.app'">Live Demo</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container reveal">
+          <div class="article-container">
+            <img src="./assets/images.png" alt="Fake News Forensic" class="project-img"/>
+          </div>
+          <h2 class="project-title">Fake News Forensic</h2>
+          <div class="btn-container">
+            <button class="btn project-btn btn-color-2" onclick="location.href='https://github.com/oluwaseyi-salisu'">GitHub</button>
+            <button class="btn project-btn btn-color-2" onclick="location.href='#'">Live Demo</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section-label reveal">04 — Connect</p>
+    <p class="title reveal">Get In <em>Touch</em></p>
+    <div class="contact-info-upper-container reveal">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email" class="icon contact-icon email-icon"/>
+        <p><a href="mailto:oluwaseyisalisu1@gmail.com">oluwaseyisalisu1@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon contact-icon"/>
+        <p><a href="https://www.linkedin.com/in/oluwaseyi-salisu/" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p>Copyright &copy; 2025 <span>Oluwaseyi Salisu</span>. All Rights Reserved.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
