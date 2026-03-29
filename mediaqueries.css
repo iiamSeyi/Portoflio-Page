@@ -1,6 +1,9 @@
 @media screen and (max-width: 1400px) {
   #profile { height: 83vh; margin-bottom: 6rem; }
   .about-containers { flex-wrap: wrap; }
+  section { margin: 0 5rem; }
+  #about    { padding: 6rem 5rem 5rem; }
+  #projects { padding: 5rem 5rem; }
 }
 
 @media screen and (max-width: 1200px) {
@@ -10,8 +13,8 @@
   #profile, .section-container { display: block; }
   .arrow { display: none; }
   section, .section-container { height: fit-content; }
-  section  { margin: 0 5%; }
-  #about   { padding: 5rem 5%; }
+  section   { margin: 0 5%; }
+  #about    { padding: 5rem 5%; }
   #projects { padding: 5rem 5%; }
   .section__pic-container { width: 275px; height: 275px; margin: 0 auto 2rem; }
   .about-containers { margin-top: 0; }
@@ -19,7 +22,7 @@
 
 @media screen and (max-width: 600px) {
   #contact, footer { height: 40vh; }
-  #profile { height: 83vh; margin-bottom: 0; }
+  #profile { height: auto; min-height: 100vh; margin-bottom: 0; padding-top: 14vh; }
   article { font-size: 1rem; }
   footer nav { height: fit-content; margin-bottom: 2rem; }
   .about-containers,
@@ -31,8 +34,16 @@
   .experience-sub-title { font-size: 1.25rem; }
   .logo { font-size: 1.5rem; }
   .nav-links { flex-direction: column; gap: 0.5rem; text-align: center; }
-  .section__pic-container { width: auto; height: 46vw; justify-content: center; }
+  .section__pic-container {
+    width: 200px;
+    height: 200px;
+    max-width: 70vw;
+    max-height: 70vw;
+    margin: 0 auto 2rem;
+    justify-content: center;
+  }
   .section__text__p2 { font-size: 1.25rem; }
   .title { font-size: 2rem; }
   .text-container { text-align: justify; }
+  .cursor, .cursor-ring { display: none; }
 }
